@@ -37,6 +37,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Module::Runtime" : "0",
             "Type::Library" : "0.028",
             "Type::Utils" : "0.028"
          }
@@ -57,7 +58,7 @@
    "provides" : {
       "Type::Libraries" : {
          "file" : "lib/Type/Libraries.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -75,5 +76,5 @@
          "web" : "https://github.com/tobyink/p5-type-libraries"
       }
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }

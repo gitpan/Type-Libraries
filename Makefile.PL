@@ -20,7 +20,11 @@ my $meta = {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
                         runtime   => {
-                                       requires => { "Type::Library" => 0.028, "Type::Utils" => 0.028 },
+                                       requires => {
+                                         "Module::Runtime" => 0,
+                                         "Type::Library"   => 0.028,
+                                         "Type::Utils"     => 0.028,
+                                       },
                                      },
                         test      => {
                                        recommends => {
@@ -36,7 +40,7 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "Type::Libraries" => { file => "lib/Type/Libraries.pm", version => 0.001 },
+                        "Type::Libraries" => { file => "lib/Type/Libraries.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -51,7 +55,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Type-Libraries/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;

@@ -28,8 +28,9 @@ optional_features: {}
 provides:
   Type::Libraries:
     file: lib/Type/Libraries.pm
-    version: 0.001
+    version: 0.002
 requires:
+  Module::Runtime: 0
   Type::Library: 0.028
   Type::Utils: 0.028
 resources:
@@ -38,4 +39,4 @@ resources:
   homepage: https://metacpan.org/release/Type-Libraries
   license: http://dev.perl.org/licenses/
   repository: https://github.com/tobyink/p5-type-libraries
-version: 0.001
+version: 0.002
